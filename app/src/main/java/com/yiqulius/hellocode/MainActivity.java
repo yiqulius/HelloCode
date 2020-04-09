@@ -1,5 +1,6 @@
 package com.yiqulius.hellocode;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -7,7 +8,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements MainContract.View{
+public class MainActivity extends Activity implements MainContract.View{
     private static final String TAG = "MainActivity";
 
     MainContract.Presenter presenter;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.button);
 
@@ -40,5 +41,12 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     public void setPresenter(MainContract.Presenter presenter) {
         Log.d(TAG, "setPresenter() returned: " + "test!");
         this.presenter = presenter;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy() returned: ");
+        SharedPreferencesUtil.putBoolean(MainActivity.this, SharedPreferencesUtil.FIRST_OPEN, true);
     }
 }
