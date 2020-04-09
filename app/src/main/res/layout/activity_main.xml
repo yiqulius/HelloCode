@@ -6,12 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="true"
+        app:isClipChildrenMode="true"
+        app:isHandLoop="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="false"
+        app:isShowTips="true"
+        app:pageChangeDuration="800"
+        app:pointsContainerBackground="@drawable/shape_round_8dp"
+        app:pointsPosition="RIGHT" />
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="click"
-
+        android:layout_below="@id/banner"
         />
-
 </RelativeLayout>
