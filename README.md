@@ -5,4 +5,4 @@
 #### 轮播图 : https://github.com/xiaohaibin/XBanner
 #### 底部导航栏 : https://gitee.com/afei_/BottomTabbar
 #### 登陆注册 : https://github.com/RKGG/Login_demo
-#### 照片墙 : Android开发艺术探索-第12章
+#### 照片墙 : https://github.com/suzeyu1992/Notes_AndroidDevSeek/tree/master/AndroidDevSeek-12
