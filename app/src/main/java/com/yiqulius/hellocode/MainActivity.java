@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         List<Fragment> mFragments = new ArrayList<>(4);
 
         mFragments.add(BlankFragment.newInstance("今日"));
-        mFragments.add(BlankFragment.newInstance("记录"));
+        mFragments.add(PictureFragment.newInstance("展示"));
         mFragments.add(BlankFragment.newInstance("通讯录"));
         mFragments.add(BlankFragment.newInstance("设置"));
 
         FragmentPagerAdapter mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), mFragments);
         mViewPager.setAdapter(mAdapter);
         mViewPager.addOnPageChangeListener(mPageChangeListener);
-        mViewPager.setOffscreenPageLimit(3);
+        mViewPager.setOffscreenPageLimit(4);
         mTabRadioGroup.setOnCheckedChangeListener(mOnCheckedChangeListener);
     }
 

@@ -31,7 +31,7 @@
             android:id="@+id/record_tab"
             style="@style/Custom.TabRadioButton"
             android:drawableTop="@drawable/tab_record_selector"
-            android:text="记录" />
+            android:text="展示" />
 
         <RadioButton
             android:id="@+id/contact_tab"

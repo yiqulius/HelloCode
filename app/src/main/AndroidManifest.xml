@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yiqulius.hellocode">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,12 +17,12 @@
             android:name=".WelcomeActivity"
             android:screenOrientation="fullSensor"
             android:theme="@style/AppWelcome" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -32,6 +33,10 @@
         <activity android:name=".login.RegisterActivity"/>
         <activity android:name=".login.ForgotInfoActivity"/>
         <activity android:name=".TestActivity"/>
+        <activity android:name=".image.photowall.PhotoWallActivity"/>
+        <activity android:name=".image.ImageActivity">
+
+        </activity>
 
 
     </application>

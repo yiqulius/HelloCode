@@ -10,7 +10,7 @@
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        app:AutoPlayTime="3000"
+        app:AutoPlayTime="10000"
         app:isAutoPlay="true"
         app:isClipChildrenMode="true"
         app:isHandLoop="true"
