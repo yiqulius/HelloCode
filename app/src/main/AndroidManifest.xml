@@ -23,11 +23,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
-        <activity android:name=".WelcomeGuideActivity">
-        </activity>
+        <activity android:name=".WelcomeGuideActivity"/>
+        <activity android:name=".login.LoginActivity"/>
+        <activity android:name=".login.RegisterActivity"/>
+        <activity android:name=".login.ForgotInfoActivity"/>
+        <activity android:name=".TestActivity"/>
 
 
     </application>

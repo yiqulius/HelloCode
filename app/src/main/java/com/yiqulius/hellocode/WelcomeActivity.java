@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.ImageView;
 
+import com.yiqulius.hellocode.login.LoginActivity;
+
 import java.util.Random;
 
 public class WelcomeActivity extends Activity {
